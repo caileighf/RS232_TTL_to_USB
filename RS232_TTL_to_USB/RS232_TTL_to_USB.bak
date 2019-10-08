@@ -1,0 +1,313 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Interface_UART:MAX232I U?
+U 1 1 5D893873
+P 3317 4020
+F 0 "U?" H 3317 5401 50  0000 C CNN
+F 1 "MAX232I" H 3317 5310 50  0000 C CNN
+F 2 "" H 3367 2970 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/max232.pdf" H 3317 4120 50  0001 C CNN
+	1    3317 4020
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D89D7F8
+P 8068 4549
+F 0 "R?" V 7861 4549 50  0000 C CNN
+F 1 "10K" V 7952 4549 50  0000 C CNN
+F 2 "" V 7998 4549 50  0001 C CNN
+F 3 "~" H 8068 4549 50  0001 C CNN
+	1    8068 4549
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D89F6D7
+P 7651 5420
+F 0 "#PWR?" H 7651 5170 50  0001 C CNN
+F 1 "GND" H 7656 5247 50  0000 C CNN
+F 2 "" H 7651 5420 50  0001 C CNN
+F 3 "" H 7651 5420 50  0001 C CNN
+	1    7651 5420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7651 5420 7651 5249
+$Comp
+L Switch:SW_Push_SPDT SW?
+U 1 1 5D8A566B
+P 8464 3949
+F 0 "SW?" H 8464 4234 50  0000 C CNN
+F 1 "SW_Push_SPDT" H 8464 4143 50  0000 C CNN
+F 2 "" H 8464 3949 50  0001 C CNN
+F 3 "~" H 8464 3949 50  0001 C CNN
+	1    8464 3949
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7918 3949 8264 3949
+NoConn ~ 8664 3849
+Wire Wire Line
+	8665 4549 8664 4049
+Wire Wire Line
+	8665 4549 8218 4549
+Connection ~ 8665 4549
+$Comp
+L power:GND #PWR?
+U 1 1 5D8A9C46
+P 8665 4949
+F 0 "#PWR?" H 8665 4699 50  0001 C CNN
+F 1 "GND" H 8670 4776 50  0000 C CNN
+F 2 "" H 8665 4949 50  0001 C CNN
+F 3 "" H 8665 4949 50  0001 C CNN
+	1    8665 4949
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8665 4949 8665 4649
+Wire Wire Line
+	7918 4949 8665 4949
+Connection ~ 8665 4949
+$Comp
+L Device:R R?
+U 1 1 5D8AF90C
+P 8519 3449
+F 0 "R?" V 8312 3449 50  0000 C CNN
+F 1 "1.5K" V 8403 3449 50  0000 C CNN
+F 2 "" V 8449 3449 50  0001 C CNN
+F 3 "~" H 8519 3449 50  0001 C CNN
+	1    8519 3449
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D8B1691
+P 8669 3150
+F 0 "#PWR?" H 8669 3000 50  0001 C CNN
+F 1 "+3V3" H 8684 3323 50  0000 C CNN
+F 2 "" H 8669 3150 50  0001 C CNN
+F 3 "" H 8669 3150 50  0001 C CNN
+	1    8669 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8669 3150 7918 3149
+Wire Wire Line
+	8669 3449 8669 3150
+Connection ~ 8669 3150
+Wire Wire Line
+	7918 3449 8369 3449
+Text GLabel 7918 3449 3    50   Input ~ 0
+D-
+Text GLabel 7918 3349 2    50   Input ~ 0
+D+
+Connection ~ 7118 5249
+Wire Wire Line
+	7651 5249 7118 5249
+Connection ~ 7018 5249
+Wire Wire Line
+	7018 5249 7118 5249
+Wire Wire Line
+	6918 5249 7018 5249
+$Comp
+L Interface_USB:FT245BM U?
+U 1 1 5D895C5D
+P 7018 4049
+F 0 "U?" H 7018 2760 50  0000 C CNN
+F 1 "FT245BM" H 7018 2669 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 7968 2899 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT245B.html" H 7018 4049 50  0001 C CNN
+	1    7018 4049
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7918 4149
+NoConn ~ 7918 4349
+NoConn ~ 7918 3749
+NoConn ~ 7918 4749
+$Comp
+L Device:C_Small C?
+U 1 1 5D8B65A7
+P 8891 3250
+F 0 "C?" H 8983 3296 50  0000 L CNN
+F 1 "33nF" H 8983 3205 50  0000 L CNN
+F 2 "" H 8891 3250 50  0001 C CNN
+F 3 "~" H 8891 3250 50  0001 C CNN
+	1    8891 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8891 3150 8669 3150
+$Comp
+L power:GND #PWR?
+U 1 1 5D8B9B62
+P 8891 3350
+F 0 "#PWR?" H 8891 3100 50  0001 C CNN
+F 1 "GND" H 8896 3177 50  0000 C CNN
+F 2 "" H 8891 3350 50  0001 C CNN
+F 3 "" H 8891 3350 50  0001 C CNN
+	1    8891 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6118 4549 0    50   Input ~ 0
+FTDI_TX
+Text GLabel 6118 4649 0    50   Input ~ 0
+FTDI_RX
+$Comp
+L Device:R R?
+U 1 1 5D8BB94E
+P 8249 4649
+F 0 "R?" V 8042 4649 50  0000 C CNN
+F 1 "10K" V 8133 4649 50  0000 C CNN
+F 2 "" V 8179 4649 50  0001 C CNN
+F 3 "~" H 8249 4649 50  0001 C CNN
+	1    8249 4649
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7918 4649 8099 4649
+Wire Wire Line
+	8399 4649 8665 4649
+Connection ~ 8665 4649
+Wire Wire Line
+	8665 4649 8665 4549
+$Comp
+L Connector:USB_B J?
+U 1 1 5D898C74
+P 7281 2255
+F 0 "J?" V 7292 2585 50  0000 L CNN
+F 1 "USB_B" V 7383 2585 50  0000 L CNN
+F 2 "" H 7431 2205 50  0001 C CNN
+F 3 " ~" H 7431 2205 50  0001 C CNN
+	1    7281 2255
+	-1   0    0    1   
+$EndComp
+Text GLabel 6981 2155 0    50   Input ~ 0
+D-
+Text GLabel 6981 2255 0    50   Input ~ 0
+D+
+Wire Wire Line
+	7281 1855 7381 1855
+Wire Wire Line
+	6981 2849 6981 2455
+Wire Wire Line
+	7651 5249 9200 5249
+Wire Wire Line
+	9200 5249 9199 1856
+Wire Wire Line
+	9199 1856 7381 1855
+Connection ~ 7651 5249
+Connection ~ 7381 1855
+Wire Wire Line
+	6818 2849 6981 2849
+Wire Wire Line
+	6981 2849 7018 2849
+Connection ~ 6981 2849
+Wire Wire Line
+	7018 2849 7118 2849
+Connection ~ 7018 2849
+NoConn ~ 7318 2849
+NoConn ~ 6118 3149
+NoConn ~ 6118 3249
+NoConn ~ 6118 3349
+NoConn ~ 6118 3449
+NoConn ~ 6118 3849
+NoConn ~ 6118 3749
+NoConn ~ 6118 3649
+NoConn ~ 6118 3549
+NoConn ~ 6118 4049
+NoConn ~ 6118 4149
+Wire Wire Line
+	6118 4849 5592 4849
+Wire Wire Line
+	5592 4849 5589 2848
+Wire Wire Line
+	5589 2848 6818 2849
+Connection ~ 6818 2849
+NoConn ~ 6118 4949
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D8FF121
+P 1423 4744
+F 0 "H?" H 1523 4793 50  0000 L CNN
+F 1 "RX" H 1523 4702 50  0000 L CNN
+F 2 "" H 1423 4744 50  0001 C CNN
+F 3 "~" H 1423 4744 50  0001 C CNN
+	1    1423 4744
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D90148C
+P 1423 4448
+F 0 "H?" H 1523 4497 50  0000 L CNN
+F 1 "TX" H 1523 4406 50  0000 L CNN
+F 2 "" H 1423 4448 50  0001 C CNN
+F 3 "~" H 1423 4448 50  0001 C CNN
+	1    1423 4448
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D904432
+P 1432 5416
+F 0 "H?" H 1532 5465 50  0000 L CNN
+F 1 "GND" H 1532 5374 50  0000 L CNN
+F 2 "" H 1432 5416 50  0001 C CNN
+F 3 "~" H 1432 5416 50  0001 C CNN
+	1    1432 5416
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5D904FAB
+P 1323 5069
+F 0 "H?" V 1277 5219 50  0000 L CNN
+F 1 "VCC" V 1368 5219 50  0000 L CNN
+F 2 "" H 1323 5069 50  0001 C CNN
+F 3 "~" H 1323 5069 50  0001 C CNN
+	1    1323 5069
+	0    1    1    0   
+$EndComp
+NoConn ~ 2517 4320
+NoConn ~ 2517 4720
+NoConn ~ 4117 4720
+NoConn ~ 4117 4320
+Wire Wire Line
+	3317 5220 3316 5418
+Wire Wire Line
+	3316 5418 7651 5420
+Connection ~ 7651 5420
+Wire Wire Line
+	1532 5416 3317 5416
+Wire Wire Line
+	3317 5416 3316 5418
+Connection ~ 3316 5418
+Wire Wire Line
+	3317 2820 3319 2457
+Wire Wire Line
+	3319 2457 6981 2455
+Connection ~ 6981 2455
+Wire Wire Line
+	1523 4448 1856 4119
+Wire Wire Line
+	1856 4119 2517 4120
+Wire Wire Line
+	1523 4744 1740 4520
+Wire Wire Line
+	1740 4520 2517 4520
+$EndSCHEMATC
